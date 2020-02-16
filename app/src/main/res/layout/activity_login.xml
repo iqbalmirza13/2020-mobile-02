@@ -33,11 +33,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="welcome back"
+        android:layout_marginBottom="10dp"
+        android:text="Continuing as"
         android:textColor="#000000"
-        android:textSize="40sp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintHorizontal_bias="0.224"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -45,28 +47,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="at largest Services marketplace"
+        android:layout_marginTop="10dp"
+        android:text="Service Provider"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintHorizontal_bias="0.26"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="32dp"
-        android:text="Enter as a"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -77,31 +65,64 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="361dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="20dp"
-        android:background="#ff3436"
-        android:text="User"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Login"
+        android:textColor="#ff3436"
+        android:background="@drawable/btn_white_large"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="361dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="70dp"
-        android:background="@drawable/btn_white_large"
-        android:text="service provider"
-        android:textColor="#ff3436"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/button3"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="#ff3436"
+        android:text="Register"
+        android:textColor="#F5F5F5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="313dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_white_large"
+        android:text="Continue with Google"
+        android:textColor="#ff3436"
+        android:drawableLeft="@drawable/google_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_blue_large"
+        android:drawableLeft="@drawable/fb_logo"
+        android:text="Continue with Facebook"
+        android:textColor="#0647F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
 
     <TextView
         android:id="@+id/textView4"
@@ -112,7 +133,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
